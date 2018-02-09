@@ -1,23 +1,14 @@
-#include <iostream>
-using namespace std;
+#include<stdio.h>
 int main()
 {
- double a;
- flot g;
- 
- 
- cout<<"please enter num"<<endl;
-cin>>a;
-cout<<"enter num pleaseeeeeeeeeee program by programology site abdullah moeen"<<endl;
-cin>>g;
-while(a<g){
- 
- if(a%2==0)
+ int i,a,b;
+ printf("enter the a value");
+ scanf("%d",&a);
+ printf("enter the b value");
+ scanf("%d",&b);
+ for(i=a;i<=b;i++)
  {
- cout<<"even no. ="<<a<<endl;
- 
+  if(i%2==0)
+   printf("%d",i);
  }
- a=a+1;
-}
-}
-Advertisements
+
