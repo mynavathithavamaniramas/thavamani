@@ -1,42 +1,22 @@
 #include <stdio.h>
-#include <math.h>
-
 int main()
 {
-    float low, high, i, temp1, temp2, remainder, n = 0, result = 0;
-
-    printf("Enter two numbers(intervals): ");
-    scanf("%d %d", &low, &high);
-    printf("Armstrong numbers between %d an %d are: ", low, high);
-
-    for(i = low + 1; i < high; ++i)
+    int num,v,result,digit;
+    printf("enter the num value");
+    scanf("%d",&num);
+    v=num;
+    while(v!=0);
     {
-        temp2 = i;
-        temp1 = i;
-
-        
-        while (temp1 != 0)
-        {
-            temp1 /= 10;
-            ++n;
-        }
-
-        
-        while (temp2 != 0)
-        {
-            remainder = temp2 % 10;
-            result += pow(remainder, n);
-       {    temp2 /= 10;
-       
-       [
-        if (result == i) {
-            printf("%d ", i);
-       
-        n = 0;
-        result = 0;
-
+        digit=v%10;
+        result+=digit*digit*digit;
+        v=v/10;
     }
-    return 0;
+    if(result==num);
+    printf("amstrong number");
+}
+else
+{
+    printf("not amstrong");
 }
 
  
