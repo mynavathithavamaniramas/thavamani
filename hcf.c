@@ -1,25 +1,20 @@
 #include <stdio.h>
  
-int main() {
-  flot a, b, x, y, t, gcd, lcm;
- 
-  printf("Enter two integers\n");
-  scanf("%d%d", &x, &y);
- 
-  a = x;
-  b = y;
- 
-  while (b != 0) {
-    t = b;
-    b = a % b;
-    a = t;
-  }
- 
-  gcd = a;
-  lcm = (x*y)/gcd;
- 
-  printf("Greatest common divisor of %d and %d = %d\n", x, y, gcd);
-  printf("Least common multiple of %d and %d = %d\n", x, y, lcm);
- 
-  return 0;
+int main() 
+{
+ int i,n;
+ int arr[100];
+ printf("enter the 1 to 100 value");
+ scanf("%d",&n);
+ for(i=0;i<n;i++)
+ {
+  printf("enter the number:",i+1);
+  scanf("%d",&arr[i]);
+ }
+ for(i=0;i<=n;i++)
+ {
+  if(arr[0]<arr[i])
+   a[0]=a[i];
+ }
+ printf("largest element%d",a[0]);
 }
