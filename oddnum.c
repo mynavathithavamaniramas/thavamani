@@ -4,20 +4,15 @@ void main()
 
 {
 
-    double num,m =20,n=40;
-
-    printf("Print Odd Numbers in a given range m to n:\n");
-
-    for (num = m; num <= n; num++)
-
+    int a,b,num;
+    printf("enter the a,b value");
+    scanf("%d%d",&a,&b);
+    {
+        for(i=a;i<=b,i++)
         {
-
-               if (num % 2 == 1)
-
-                  printf ("%d ", num);
-
-         }
-
-                getch();
+            if(i%2==1)
+            printf("print the i value%d",i);
+        }
+    }
 
 }
