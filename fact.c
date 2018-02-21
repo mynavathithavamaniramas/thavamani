@@ -1,24 +1,12 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    flot n, i;
-    unsigned long long factorial = 1;
-
-    printf("Enter an integer: ");
+    int sum=1,i,n;
+    printf("enter the n value");
     scanf("%d",&n);
-
-    
-    if (n < 0)
-        printf("Error! Factorial of a negative number doesn't exist.");
-
-    else
+    for(i=1;i<=n;i++)
     {
-        for(i=1; i<=n; ++i)
-        {
-            factorial *= i;           
-        }
-        printf("Factorial of %d = %llu", n, factorial);
+        sum=sum*i;
     }
-
-    return 0;
+    printf("%d",sum);
 }
